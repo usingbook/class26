@@ -1,8 +1,6 @@
 /* 테스트후 삭제 */
 
 .ub-style{
-  background-color: #ccc;
-  border: 1px solid #000;
   box-sizing: border-box;
 }
 /* .ub-style 연속으로 나올때 동생에게 여백 */
@@ -305,9 +303,32 @@ width:var(----tab-row-tabmenu-2col-width,24%);
 }
 .ub-style .shortcut-title{}
 
-/* 
+/****
 product_listmain xans-product-listmain
-*/
+****/
+.ub-style.main_product_list {
+  position: relative;
+}
+/* 섹션타이틀 위치 조정 */
+.ub-style.main_product_list .main_title{
+  position:absolute;
+  left:calc(50% + 10px);
+  top:10px;
+}
+/* 첫번째 상품의 크기를 지정 */
+.ub-style .ec-base-product .prdList > li{
+  width:16.66%;
+  vertical-align: bottom;
+}
+.ub-style .ec-base-product .prdList > li:nth-child(1){
+  width:50%;
+}
+/* 첫번째 상품의 .description 감추기 */
+.ub-style .ec-base-product .prdList > li:nth-child(1) .description{
+  display: none;
+}
+
+
 
 /* 미디어쿼리 */
 
@@ -337,6 +358,15 @@ product_listmain xans-product-listmain
   justify-content: center;
 }
 
+.ub-style.main_product_list .main_title{
+  position:static;
+}
+.ub-style .ec-base-product .prdList > li{
+  width:50%;
+}
+.ub-style .ec-base-product .prdList > li:nth-child(1) .description{
+  display: block;
+}
 }
 
 
