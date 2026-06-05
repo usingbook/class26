@@ -49,6 +49,7 @@ input, select, textarea, body, code, button {
 
 .dan-section .item {
   /* flex:none; */
+  position: relative;
 }
 
 /* 
@@ -68,7 +69,18 @@ input, select, textarea, body, code, button {
 }
 
 .dan-section .item .thumb img{}
-.dan-section .item .desc {}
+.dan-section .item .desc {
+  font-size:32px;
+  font-weight: 700;
+  color:#fff;
+
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    padding:0.5rem 1rem;
+}
 
 /* .section.ub-style 스타일 */
 .ub-style.section_full{
