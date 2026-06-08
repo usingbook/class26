@@ -56,8 +56,8 @@
   :root{
     --min-font:13;
     --max-font:18;
-    --min-font-section-title:32;
-    --max-font-section-title:18;
+    --min-font-section-title:18;
+    --max-font-section-title:32;
     --min-width:768;
     --max-width:1760;
   }
@@ -67,7 +67,7 @@
     calc(var(--min-font-section-title) * 1px ),
     calc(
        var(--min-font-section-title) * 1px +
-      (var(--max-font-section-title) - (var(--min-font-section-title) * 1px)) *
+      (var(--max-font-section-title) - (var(--min-font-section-title) )) *
       ((100vw - var(--min-width) * 1px) / (var(--max-width) - var(--min-width)))
     ),
     calc(var(--max-font-section-title) * 1px)
