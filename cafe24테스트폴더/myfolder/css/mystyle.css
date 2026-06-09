@@ -349,6 +349,34 @@ override
 
 }
 
+.ec-base-product .prdList .icon__box {
+  display:none;
+}
+
+/* 칼라칩 이동 */
+/* 상품카드 위로 */
+/* .ec-base-product .prdList .prdList__item {
+  position: relative;
+} */
+/* .ec-base-product .spec .color {
+    position: absolute;
+    top: -20px;
+    right: 0px;
+} */
+.ec-base-product .spec .chips {
+  width:20px; height: 10px;
+  border-radius: 999px;
+}
+.ec-base-product .spec .color {
+    position: absolute;
+    top: -20px;
+    right: 0px;
+}
+
+/* 상품설명 위로 */
+.ec-base-product .prdList .description {
+  position:relative;
+}
 /* 미디어쿼리 */
 
 @media (max-width:1024px){
